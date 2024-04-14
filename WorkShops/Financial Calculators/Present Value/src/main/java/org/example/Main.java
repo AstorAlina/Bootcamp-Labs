@@ -41,7 +41,7 @@ public class Main {
     }
 
     public static double presentValue (double monthlyPayout, double monthlyInterest, double monthlyPayments) {
-        double presentValue =  (monthlyPayout * (1 - Math.pow(1 + monthlyInterest,-240))) / monthlyInterest;
+        double presentValue =  (monthlyPayout * (1 - Math.pow(1 + monthlyInterest,-monthlyPayments))) / monthlyInterest;
         return presentValue;
     }
 
