@@ -21,10 +21,10 @@ public class Main {
         System.out.printf("Here is your monthly interest: $%.8f\n", monthlyInterest);
 
         double monthlyPayments = monthlyPayments(yearstoPayout);
-        System.out.printf("Here is your monthly payments: $%.2f\n", monthlyPayments);
+        System.out.printf("Here is your monthly payments: $%.0f\n", monthlyPayments);
 
         double presentValue = presentValue(monthlyPayout, monthlyInterest, monthlyPayments);
-        System.out.printf("Here is your present value: $%.5f\n", presentValue);
+        System.out.printf("Here is your present value: $%.2f\n", presentValue);
 
 
     }
