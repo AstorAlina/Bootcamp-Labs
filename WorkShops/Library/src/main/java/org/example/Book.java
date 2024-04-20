@@ -84,7 +84,7 @@ public class Book {
 //
 //    }
 
-    //ok
+    //not sure why it wont update the screens based on checking out or in a book :(
 
 }
 
