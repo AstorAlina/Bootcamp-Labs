@@ -3,7 +3,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        //creating a new mortage calculator, instantiating
+        MortageCalculator mortageCalculator = new MortageCalculator();
+        System.out.println(mortageCalculator.monthlyPayment());
+        System.out.println(mortageCalculator.totalInterest());
+        /*
         //scanner
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hello welcome to Alina's Mortage Calculator!");
@@ -17,11 +21,13 @@ public class Main {
         System.out.println("Please enter your loan length:");
         double loanLength = scanner.nextDouble();
 
-
+        //Method Invocation & Variable Assignment
         double monthlyInterestRate = monthlyInterestRate(interest);
         double loanLengthToMonths = loanLengthToMonths(loanLength);
         double monthlyPayment = monthlyPayment(principle, monthlyInterestRate, loanLengthToMonths);
         double totalInterest = totalInterest(monthlyPayment, loanLengthToMonths, principle);
+
+        //print statement
         System.out.printf("Here is your monthly payment: $%.2f\n", monthlyPayment);
         System.out.printf("Here is your total interest paid: $%.2f\n", totalInterest);
         System.out.printf("Here is your loan length in months: %.0f\n", loanLengthToMonths);
@@ -29,7 +35,7 @@ public class Main {
 
 
     }
-
+    //methods
     public static double monthlyInterestRate(double interest) {
         double monthlyInterestRate = (interest / 12) / 100;
         return monthlyInterestRate;
@@ -51,9 +57,9 @@ public class Main {
         return totalInterest;
     }
 
-
+*/
+    }
 }
-
 
 
 
