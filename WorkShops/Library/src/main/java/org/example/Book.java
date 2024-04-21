@@ -7,7 +7,7 @@ public class Book {
     private String title;
     private String author;
     private String isbn;
-    public boolean isCheckedOut;
+    public boolean CheckedOut;
     public String checkedOutTo;
 
     //constructor
@@ -16,7 +16,7 @@ public class Book {
         this.author = author;
         this.isbn = isbn;
         this.id = id;
-        this.isCheckedOut = isCheckedOut;
+        this.CheckedOut = isCheckedOut;
         this.checkedOutTo = checkedOutTo;
     }
 
@@ -53,12 +53,12 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public boolean isCheckedOut() {
-        return isCheckedOut;
+    public boolean CheckedOut() {
+        return CheckedOut;
     }
 
     public void setCheckedOut(boolean checkedOut) {
-        isCheckedOut = checkedOut;
+        CheckedOut = checkedOut;
     }
 
 

@@ -37,9 +37,9 @@ public class Screens {
 
         System.out.println("Here is a list of available books: ");
         for (Book book : book) {
-            if (book.isCheckedOut() == false) {
+            if (book.CheckedOut() == false) {
                 System.out.printf("ID: %d, Title: %s, ISBN: %s, Is checked out: %b \n",
-                        book.getId(), book.getTitle(), book.getIsbn(), book.isCheckedOut);
+                        book.getId(), book.getTitle(), book.getIsbn(), book.CheckedOut);
 
             }
 
@@ -65,9 +65,9 @@ public class Screens {
     public static void checkedOutBooks() {
         System.out.println("Here is a list of Books that are currently checked out: ");
         for (Book book : book) {
-            if (book.isCheckedOut() == true) {
+            if (book.CheckedOut() == true) {
                 System.out.printf("ID: %d, Title: %s, ISBN: %s, Checked Out?: %b, Who Checked Out: %s\n",
-                        book.getId(), book.getTitle(), book.getIsbn(), book.isCheckedOut(), book.checkedOutTo);
+                        book.getId(), book.getTitle(), book.getIsbn(), book.CheckedOut(), book.checkedOutTo);
             }
 
         }
@@ -132,6 +132,3 @@ public class Screens {
 
     }
 }
-
-
-//screens will call checkin and checkout method
