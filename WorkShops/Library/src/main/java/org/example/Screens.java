@@ -19,17 +19,17 @@ public class Screens {
         book[6] = new Book(7, "The Goldfinch", "Donna Tartt", "9781408855652", false, "");
         book[7] = new Book(8, "House of Leaves", "Mark Z. Danielewski.", "9780544003415", false, "");
         book[8] = new Book(9, "The Kite Runner", "Khaled Hosseini", "9780061120084", false, "");
-        book[9] = new Book(10, "The Book Thief", "Markus Zusak", "9780451524935", false, "");
+        book[9] = new Book(10, "The Book Thief", "Markus Zusak", "9780451524935", true, "Carl Smart");
         book[10] = new Book(11, "The Great Gatsby", "F. Scott Fitzgerald", "9780743273565", false, "");
         book[11] = new Book(12, "Pride and Prejudice", "Jane Austen", "9780141439518", false, "");
         book[12] = new Book(13, "The Catcher in the Rye", "J.D. Salinger", "9780316769488", false, "");
         book[13] = new Book(14, "The Hobbit", "J.R.R. Tolkien", "9780547928227", false, "");
         book[14] = new Book(15, "Harry Potter and the Philosopher's Stone", "J.K. Rowling", "9781408855652", false, "");
         book[15] = new Book(16, "The Lord of the Rings", "J.R.R. Tolkien", "9780544003415", false, "");
-        book[16] = new Book(17 ,"To Kill a Mockingbird", "Harper Lee", "9780061120084", false, "");
+        book[16] = new Book(17 ,"To Kill a Mockingbird", "Harper Lee", "9780061120084", true, "Jake Larson");
         book[17] = new Book(18, "1984", "George Orwell", "9780451524935", false, "");
         book[18] = new Book(19, "The Master and Margarita", "Mikhail Bulgakov", "9780743273565",  false, "");
-        book[19] = new Book(20,"If on a winter's night a traveler", " Italo Calvino", "9780141439518",  false, "");
+        book[19] = new Book(20,"If on a winter's night a traveler", " Italo Calvino", "9780141439518",  true, "Timmy Long");
     }
 
 
