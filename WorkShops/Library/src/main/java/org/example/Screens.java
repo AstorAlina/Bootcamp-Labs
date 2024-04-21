@@ -48,8 +48,8 @@ public class Screens {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please select an option: ");
-        System.out.println("(1) Check out a book");
-        System.out.println("(2) Go back to home screen");
+        System.out.println("(1) I'd like to check out a book.");
+        System.out.println("(2) Home Screen");
         var input = scanner.nextLine();
         if (input.equals("1")) {
             checkOutBook();
@@ -72,8 +72,8 @@ public class Screens {
 
         }
         System.out.println("Please select an option: ");
-        System.out.println("(1) Check in a book");
-        System.out.println("(2) Go back to home screen");
+        System.out.println("(1) I'd like to check in a book.");
+        System.out.println("(2) Home Screen");
 
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();

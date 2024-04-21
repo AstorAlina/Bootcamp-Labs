@@ -18,8 +18,8 @@ public class Main {
 //            Screens.setupBookInventory();
 
             System.out.println("Welcome to Alina's Library! Please select an option: ");
-            System.out.println("(1) Available Books");
-            System.out.println("(2) Checked Out Books");
+            System.out.println("(1) View Available Books");
+            System.out.println("(2) View Checked-Out Books");
             System.out.println("(3) Exit");
 
             var input = scanner.nextLine();
@@ -37,7 +37,7 @@ public class Main {
 
 
                 default:
-                    System.out.println("Sorry try again");
+                    System.out.println("Incorrect Input");
             }
 
         }
