@@ -11,12 +11,12 @@ public class Book {
     public String checkedOutTo;
 
     //constructor
-    public Book(int id, String title, String author, String isbn, boolean isCheckedOut, String checkedOutTo) {
+    public Book(int id, String title, String author, String isbn, boolean CheckedOut, String checkedOutTo) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
         this.id = id;
-        this.CheckedOut = isCheckedOut;
+        this.CheckedOut = CheckedOut;
         this.checkedOutTo = checkedOutTo;
     }
 
