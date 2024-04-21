@@ -71,21 +71,6 @@ public class Book {
     }
 
 
-    //    //-------------------------------------------------------------//
-//    public void checkOut(String name) {
-////        checkedOutTo = name;
-////        isCheckedOut = true;
-//
-//    }
-
-//    public void checkIn (){
-//        checkedOutTo = "";
-//        isCheckedOut = false;
-//
-//    }
-
-    //not sure why it wont update the screens based on checking out or in a book :(
-
 }
 
 

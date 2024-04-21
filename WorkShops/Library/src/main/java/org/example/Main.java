@@ -7,18 +7,20 @@ import static org.example.Screens.book;
 
 public class Main {
     public static void main(String[] args) {
+        //was a loop of homescreen
+        Screens.setupBookInventory();
         homeScreen();
         }
 
 
         public static void homeScreen() {
             Scanner scanner = new Scanner(System.in);
-            Screens.setupBookInventory();
+//            Screens.setupBookInventory();
 
             System.out.println("Welcome to Alina's Library! Please select an option: ");
-            System.out.println("1) Available Books");
-            System.out.println("2) Checked Out Books");
-            System.out.println("3) Exit");
+            System.out.println("(1) Available Books");
+            System.out.println("(2) Checked Out Books");
+            System.out.println("(3) Exit");
 
             var input = scanner.nextLine();
 

@@ -47,7 +47,9 @@ public class Screens {
         }
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter either (1) Check out a book or (2) Exit to home screen");
+        System.out.println("Please select an option: ");
+        System.out.println("(1) Check out a book");
+        System.out.println("(2) Go back to home screen");
         var input = scanner.nextLine();
         if (input.equals("1")) {
             checkOutBook();
@@ -69,7 +71,9 @@ public class Screens {
             }
 
         }
-        System.out.println("Please select an option (1) to check in a book or (2) to go back to home screen");
+        System.out.println("Please select an option: ");
+        System.out.println("(1) Check in a book");
+        System.out.println("(2) Go back to home screen");
 
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
@@ -96,7 +100,6 @@ public class Screens {
         for (Book book : book) {
             if (input == book.getId()) {
                 book.setCheckedOut(false);
-                System.out.println("error"+book.isCheckedOut);
                 System.out.println("Book: " + book.getTitle() + " is checked in!");
             }
 
@@ -118,7 +121,7 @@ public class Screens {
                 if (input == book.getId()) {
                 book.setCheckedOutTo(name);
                 book.setCheckedOut(true);
-                System.out.println("The book " + book.getTitle() + book.isCheckedOut + book.checkedOutTo + " is checked out!");
+                System.out.println("The book " + book.getTitle()  + " is checked out!");
 
 
                 Main.homeScreen();
