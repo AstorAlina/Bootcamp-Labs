@@ -88,7 +88,7 @@ public class Screens {
     }
 
     public static void ifAddToCart() throws IOException {
-        System.out.println("Would you like to add one of these items to cart?");
+        System.out.println("Would you like to add one of these items to cart? (Yes or No)");
         String input = scanner.nextLine();
 
         if (input.equalsIgnoreCase("Yes")) {

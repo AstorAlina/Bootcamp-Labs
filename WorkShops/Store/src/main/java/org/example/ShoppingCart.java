@@ -97,7 +97,7 @@ public class ShoppingCart {
         }
 
     public static void checkOut (){
-        System.out.println("Would you like to check out?");
+        System.out.println("Would you like to check out? (Yes or No)");
         String input = scanner.nextLine();
 
         if(input.equalsIgnoreCase("Yes")){

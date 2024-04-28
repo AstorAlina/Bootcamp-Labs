@@ -5,14 +5,12 @@ public class Product {
     private String productName;
     private double price;
     private String department;
-    private boolean inCart;
 
     public Product(String sku, String productName, double price, String department) {
         this.sku = sku;
         this.productName = productName;
         this.price = price;
         this.department = department;
-        this.inCart = inCart;
 
     }
 
@@ -48,11 +46,4 @@ public class Product {
         this.department = department;
     }
 
-    public boolean isInCart() {
-        return inCart;
-    }
-
-    public void setInCart(boolean inCart) {
-        this.inCart = inCart;
-    }
 }
