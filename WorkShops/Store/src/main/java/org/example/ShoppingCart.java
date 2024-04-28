@@ -90,6 +90,8 @@ public class ShoppingCart {
                             product.getSku(), product.getProductName(), product.getPrice(), product.getDepartment());
                     //("ID: %d, Title: %s, ISBN: %s, Checked Out?: %b, Who Checked Out: %s\n",
                     //                        book.getId(), book.getTitle(), book.getIsbn(), book.CheckedOut(), book.checkedOutTo);
+
+
                 }
             }
         }
@@ -100,9 +102,24 @@ public class ShoppingCart {
 
         if(input.equalsIgnoreCase("Yes")){
             inCart();
+            cartTotal();
 
             System.out.println("Thank you for shopping, goodbye!");
+
         }
 
     }
+
+    public static void cartTotal (){
+        double total = 0;
+
+        for (Product product : cartItems) {
+
+            total += product.getPrice();
+
+        }
+
+        System.out.printf("Total price of items in cart: $%.2f\n", total);
+    }
 }
+
