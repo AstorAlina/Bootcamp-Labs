@@ -8,6 +8,14 @@ public class Screens {
 
     public static void homeScreen() throws IOException {
         System.out.println("Welcome to Alina's Accounting Ledger:");
+        System.out.println("    /\\_____/\\\n" +
+                "   /  o   o  \\\n" +
+                "  ( ==  ^  == )\n" +
+                "   )         (\n" +
+                "  (           )\n" +
+                " ( (  )   (  ) )\n" +
+                "(__(__)___(__)__)");
+
         System.out.println("(D) Add Deposit");
         System.out.println("(P) Make Payment");
         System.out.println("(L) Ledger");
@@ -36,6 +44,10 @@ public class Screens {
     }
 
     public static void ledger() throws IOException {
+        System.out.println("                            ╱|、\n" +
+                "                          (˚ˎ 。7  \n" +
+                "                           |、˜〵          \n" +
+                "                          じしˍ,)ノ");
         System.out.println("Welcome to the Ledger:");
         System.out.println("(A) Display all entries");
         System.out.println("(D) Deposits");
@@ -69,6 +81,8 @@ public class Screens {
     }
 
     public static void reports() throws IOException {
+        System.out.println(" /\\___/\\\n" +
+                "꒰ ˶• ༝ -˶꒱ ~♡\uFE0E \n");
         System.out.println("Welcome to Reports");
         System.out.println("(1) Months to Date");
         System.out.println("(2) Previous Month");
