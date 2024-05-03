@@ -134,8 +134,8 @@ public class Ledger {
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             ArrayList<Transaction> transactions = reader();
 
-            for (int i = transactions.size() - 1; i >= 0; i--) {
-                Transaction transaction = transactions.get(i);
+            for (int i = transactions.size() - 1; i >= 0; i--) { //initializes variable i, that runs through elements
+                Transaction transaction = transactions.get(i); //This means the loop will run until i reaches 0. i-- ititrates in reverse.
                 System.out.println(transaction);
             }
         } catch (IOException e) {
@@ -164,7 +164,7 @@ public class Ledger {
 
                 for (int i = transactions.size() - 1; i >= 0; i--) {
                     Transaction transaction = transactions.get(i);
-                    if (transaction.getAmount() < 0) {
+                    if (transaction.getAmount() < 0) { //since its a negative number, if less than 0 print
                         System.out.println(transaction);
                     }
                 }

@@ -16,7 +16,7 @@ public class Reports {
     private static final Scanner scanner = new Scanner(System.in);
     static String fileName = "src/main/resources/transactions.csv";
 
-    public static void monthToDate() {
+    public static void monthToDate() throws IOException {
         ArrayList<Transaction> transactions = reader();
 
         //From month to date, meaning month 5th to 1st date?
@@ -33,6 +33,7 @@ public class Reports {
                 System.out.println(transaction);
             }
         }
+        Screens.reports();
 
     }
 
@@ -50,10 +51,10 @@ public class Reports {
                 System.out.println(transaction);
             }
         }
-
+        Screens.reports();
     }
 
-    public static void yearToDate() {
+    public static void yearToDate() throws IOException {
         ArrayList<Transaction> transactions = reader();
 
         LocalDate today = LocalDate.now();
@@ -67,9 +68,10 @@ public class Reports {
             }
 
         }
+        Screens.reports();
     }
 
-    public static void previousYear() {
+    public static void previousYear() throws IOException {
         ArrayList<Transaction> transactions = reader();
 
         LocalDate today = LocalDate.now();
@@ -87,8 +89,9 @@ public class Reports {
             }
 
         }
+        Screens.reports();
     }
-    public static void searchByVendor(){
+    public static void searchByVendor() throws IOException {
         ArrayList<Transaction> transactions = reader();
 
         System.out.println("Enter vendor name to search:");
@@ -99,6 +102,7 @@ public class Reports {
                 System.out.println(transactions.get(i));
             }
         }
+        Screens.reports();
 
     }
 }
