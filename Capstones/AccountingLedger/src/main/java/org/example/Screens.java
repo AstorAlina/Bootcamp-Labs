@@ -40,6 +40,7 @@ public class Screens {
                 break;
             default:
                 System.out.println("Incorrect Input ≽^•⩊•^≼");
+                homeScreen();
         }
     }
 
@@ -77,6 +78,7 @@ public class Screens {
                 break;
             default:
                 System.out.println("Incorrect Input ≽^•⩊•^≼");
+                homeScreen();
         }
     }
 
@@ -120,6 +122,7 @@ public class Screens {
                 break;
             default:
                 System.out.println("Incorrect Input ≽^•⩊•^≼ ");
+                homeScreen();
         }
     }
 }
