@@ -83,7 +83,7 @@ public class Reports {
 
         for (int i = transactions.size() - 1; i >= 0; i--) {
             Transaction transaction = transactions.get(i);
-            LocalDate transactionDate = transaction.getDateTime().toLocalDate();
+            LocalDate transactionDate = transaction.getDateTime().toLocalDate(); //retrieves the date from a LocalDateTime object associated with a transaction and stores it in a LocalDate
             if (transactionDate.isAfter(firstDayOfLastYear) && transactionDate.isBefore(firstDayOfThisYear)) {
                 System.out.println(transaction);
             }
