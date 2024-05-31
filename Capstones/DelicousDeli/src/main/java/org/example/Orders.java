@@ -45,7 +45,7 @@ public class Orders {
     }
 
     public double getTotalPrice() {
-        return totalPrice;
+            return totalPrice;
     }
 
     //

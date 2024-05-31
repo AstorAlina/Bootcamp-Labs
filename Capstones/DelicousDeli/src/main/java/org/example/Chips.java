@@ -7,7 +7,7 @@ import java.util.List;
 public class Chips implements Orderable {
     public static final List<String> chipFlavors = Arrays.asList("Lays Original", "Lays BBQ");
     private String type;
-    private final double price = 1.5;
+    public final double price = 1.5;
 
     public static void stringChips(){
         String chipFlavorsString = String.join(", ", chipFlavors);

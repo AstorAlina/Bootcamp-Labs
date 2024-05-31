@@ -7,6 +7,8 @@ import java.util.Scanner;
 import static org.example.Chips.chipFlavors;
 import static org.example.Drink.drinkFlavor;
 import static org.example.Toppings.*;
+import org.example.Chips;
+import org.example.Drink;
 //use indexes
 
 public class Screens {
@@ -301,6 +303,7 @@ public class Screens {
         }
     }
 
+
     public static void addChips() {
         while (true) {
             try {
@@ -347,20 +350,22 @@ public class Screens {
     }
 
     public static void displayOrder() {
-        for(Sandwich orders : orders.getSandwiches()){
+        for (Sandwich orders : orders.getSandwiches()) {
             System.out.println(orders);
             System.out.println(orders.getPrice());
         }
-        for(Chips chipOrder : orders.getChips()){
+        for (Chips chipOrder : orders.getChips()) {
             System.out.println(chipOrder);
             System.out.println(chipOrder.getPrice());
         }
-        for(Drink drinkOrder : orders.getDrinks()){
+        for (Drink drinkOrder : orders.getDrinks()) {
             System.out.println(drinkOrder);
             System.out.println(drinkOrder.getPrice());
+        }
 
-        };
     }
+
+
     public static void confirmOrder() {
         Receipts.writeToFile(orders);
         System.out.println("Order is completed!");
