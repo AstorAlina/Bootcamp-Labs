@@ -1,6 +1,0 @@
-Sandwich: size = 'Large', bread = Wheat, isToasted = true, All toppings = [Steak, Provolone Cheese, Tomatoes, Cucumbers, Ranch]
-Price: 13.75
-Chips : flavor = Lays BBQ
-Price: 1.5
-Drink : size = 'Small', flavor = Cola
-Price: 2.0
