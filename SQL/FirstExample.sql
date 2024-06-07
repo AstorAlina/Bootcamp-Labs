@@ -51,6 +51,6 @@ SELECT *
 FROM Customers
 WHERE Region IS NULL;
 
-SELECT DISTINCT (Country)
+SELECT DISTINCT (Country)ProductNameProductNameProductName
 FROM customers
 ORDER BY Country;
